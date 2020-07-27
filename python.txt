@@ -1,0 +1,2544 @@
+def pypart2(n): 
+      
+    # number of spaces 
+    k =   n*2 -2
+  
+    # outer loop to handle number of rows 
+    for i in range(0, n): 
+      
+        # inner loop to handle number spaces 
+        # values changing acc. to requirement 
+        for j in range(0, k): 
+            print(end=" ") 
+      
+        # decrementing k after each loop 
+        k = k - 2
+      
+        # inner loop to handle number of columns 
+        # values changing acc. to outer loop 
+        for j in range(0, i+1): 
+          
+            # printing stars 
+            print("* ", end="") 
+      
+        # ending line after each row 
+        print("\r") 
+  
+# Driver Code 
+n = 5
+pypart2(n) 
+
+
+
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+
+/////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(i, end="*")
+
+
+Enter No:7
+1*2*3*4*5*6*7*
+
+/////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    print(i, end=" ")
+
+Enter No:10
+10 9 8 7 6 5 4 3 2 1
+
+
+///////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print("*", end=" ")
+
+Enter No:8
+* * * * * * * *
+
+/////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+         print("*", end=" ")
+    print("")    
+
+Enter No:8
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+* * * * * * * *
+
+///////////////////
+
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print("i", "")
+    print("")   
+
+Enter no:2
+i
+
+i
+i
+
+////////////////
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print("*", end="")
+    print("")    
+
+Enter no:6
+*
+**
+***
+****
+*****
+******
+
+
+////////////
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print(i, end="")
+    print("")     
+
+Enter no:5
+1
+22
+333
+4444
+55555
+
+////////////
+
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print(i-j+1, end="")
+    print("")     
+
+Enter no:5
+1
+21
+321
+4321
+54321
+
+/////////////////
+
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    for j in range(i, n+1):
+         print("*", end="")
+    print("")     
+
+Enter no:5
+*****
+****
+***
+**
+*
+
+//////////////////
+
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    print(" "*(n-i)+"*"*i) 
+
+Enter no:5
+    *
+   **
+  ***
+ ****
+*****
+////////////
+n = int(input("Enter no:"))     
+for i in range(1, n+1):
+    print(" "*(n-i)+"@"*i)   
+
+Enter no:3
+  @
+ @@
+@@@
+
+/////////////
+n = int(input("Enter no:"))     
+for i in range(n, 0, -1):
+    print(" "*(n-i)+"* "*i)   
+
+Enter no:6
+* * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+
+////////////
+
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    print(" "*(n-i)+"*"*i);
+
+Enter No:8
+********
+ *******
+  ******
+   *****
+    ****
+     ***
+      **
+       *
+
+
+///////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i)+"* "*i);
+
+
+
+Enter No:5
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+///////////
+
+n = int(input("Enter No:"))
+for i in range(n , 0, -1):
+    print(" "*(n-i)+"* "*i);
+
+Enter No:5
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+
+////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print(" "); 
+
+
+Enter No:5
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+//////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print((str(i)+" ")*i)   
+
+Enter No:5
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+//////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print(i-j+1, end=" ")
+    print(" ")    
+
+Enter No:5
+1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
+/////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print(i-j, end=" ")
+    print(" ")    
+
+0
+1 0
+2 1 0
+3 2 1 0
+4 3 2 1 0
+
+////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+         print(j-i, end=" ")
+    print(" ")  
+  
+Enter No:5
+0
+-1 0
+-2 -1 0
+-3 -2 -1 0
+
+///////////////////
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    for j in range(i, n+1):
+         print(j, end=" ")
+    print(" ")    
+
+Enter No:5
+5
+4 5
+3 4 5
+2 3 4 5
+1 2 3 4 5
+/////////////////////
+
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+         print(i, end=" ")
+    print(" ")
+
+Enter No:5
+    5
+   4 4
+  3 3 3
+ 2 2 2 2
+1 1 1 1 1 
+
+
+//////////////////////
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    print(" "*(n-i), end=" ")
+    for j in range(1, i+1):
+         print(j, end=" ")
+    print(" ") 
+
+Enter No:5
+ 1 2 3 4 5
+  1 2 3 4
+   1 2 3
+    1 2
+     1
+
+//////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+         print("*"*i, end=" ")
+    print("#"*j, end=" ")  
+ 
+Enter No:4
+* * * * #### ** ** ** ** #### *** *** *** *** #### **** **** **** **** ####
+
+/////////////////////////////////////  
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+         print("*"*j, end=" ")
+    print("#"*1, end=" ")     
+
+Enter No:5
+* ** *** **** ***** # * ** *** **** ***** # * ** *** **** ***** # * ** *** **** ***** # * ** *** **** ***** #
+//////////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i):
+         print("*"*j, end=" ")
+    print("#")   
+
+Enter No:5
+#
+* #
+* ** #
+* ** *** #
+* ** *** **** #
+
+////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    if(i%2==0):
+        print("# ", end=" ")
+    else:
+        print("* ", end=" ")
+
+Enter No:8
+*  #  *  #  *  #  *  #
+
+//////////////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    if(i%3==1):
+        print("* ", end=" ")
+    elif(i%3==2):
+        print("# ", end=" ")
+    else:
+        print("@ ", end=" ")    
+
+Enter No:10
+*  #  @  *  #  @  *  #  @  *
+
+
+///////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    if(i%2==0):
+        print(i, "", end=" ")
+    else:
+        print("$ ", end="")
+
+
+Enter No:10
+$ 2  $ 4  $ 6  $ 8  $ 10
+
+/////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    if(i%2==1):
+        print(i, "", end=" ")
+    else:
+        print("$ ", end="")
+
+Enter No:10
+1  $ 3  $ 5  $ 7  $ 9  $
+
+////////////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+     print(i*n, end= " ")
+
+Enter No:5
+5 10 15 20 25
+
+////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+     print(i**n, end= " ")
+
+Enter No:5
+1 32 243 1024 3125
+
+///////////////////////////
+n = int(input("Enter No:"))
+for i in range(0, n+1):
+     if(i%2==1):
+         print("* ", end=" ")
+     else:    
+         print(i*i, end=" ")
+
+Enter No:10
+0 *  4 *  16 *  36 *  64 *  100
+
+////////////////////////////
+n = int(input("Enter No:"))
+for i in range(0, n+1):
+     if(i%2==0):
+         print("* ", end=" ")
+     else:    
+         print(i*i, end=" ")
+
+Enter No:10
+*  1 *  9 *  25 *  49 *  81 *
+
+////////////////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j%2, end=" ")
+    print(" "); 
+
+
+Enter No:10
+1
+1 0
+1 0 1
+1 0 1 0
+1 0 1 0 1
+1 0 1 0 1 0
+1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+1 0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0 1 0
+
+
+//////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j%2-1, end=" ")
+    print(" "); 
+
+Enter No:5
+0
+0 -1
+0 -1 0
+0 -1 0 -1
+0 -1 0 -1 0
+
+/////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==j :
+            print(i, end=" ")
+        else:
+            print("0 ", end="")
+    print(" ")   
+
+Enter No:10
+1 0 0 0 0 0 0 0 0 0
+0 2 0 0 0 0 0 0 0 0
+0 0 3 0 0 0 0 0 0 0
+0 0 0 4 0 0 0 0 0 0
+0 0 0 0 5 0 0 0 0 0
+0 0 0 0 0 6 0 0 0 0
+0 0 0 0 0 0 7 0 0 0
+0 0 0 0 0 0 0 8 0 0
+0 0 0 0 0 0 0 0 9 0
+0 0 0 0 0 0 0 0 0 10
+/////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==j :
+            print(j, end=" ")
+        else:
+            print(i, end="")
+    print(" ")          
+
+
+Enter No:10
+1 111111111
+22 22222222
+333 3333333
+4444 444444
+55555 55555
+666666 6666
+7777777 777
+88888888 88
+999999999 9
+10101010101010101010
+
+///////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==j:
+            print(i, end=" ")
+        else:
+            print(0, end="")
+    print(" ")  
+
+Enter No:10
+1 000000000
+02 00000000
+003 0000000
+0004 000000
+00005 00000
+000006 0000
+0000007 000
+00000008 00
+000000009 0
+00000000010
+
+//////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==j:
+            print(i, end=" ")
+        elif i==j%2:
+            print(i, end=" ")
+        else:
+            print("0 ", end="")
+    print(i)  
+
+Enter No:10
+1 0 1 0 1 0 1 0 1 0 1
+0 2 0 0 0 0 0 0 0 0 2
+0 0 3 0 0 0 0 0 0 0 3
+0 0 0 4 0 0 0 0 0 0 4
+0 0 0 0 5 0 0 0 0 0 5
+0 0 0 0 0 6 0 0 0 0 6
+0 0 0 0 0 0 7 0 0 0 7
+0 0 0 0 0 0 0 8 0 0 8
+0 0 0 0 0 0 0 0 9 0 9
+0 0 0 0 0 0 0 0 0 10 10 
+
+///////////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==j:
+            print(i, end=" ")
+        # elif i==j%2:
+        #     print(i, end=" ")
+        else:
+            print("0 ", end="")
+    print(i)       
+
+
+Enter No:10
+1 0 0 0 0 0 0 0 0 0 1
+0 2 0 0 0 0 0 0 0 0 2
+0 0 3 0 0 0 0 0 0 0 3
+0 0 0 4 0 0 0 0 0 0 4
+0 0 0 0 5 0 0 0 0 0 5
+0 0 0 0 0 6 0 0 0 0 6
+0 0 0 0 0 0 7 0 0 0 7
+0 0 0 0 0 0 0 8 0 0 8
+0 0 0 0 0 0 0 0 9 0 9
+0 0 0 0 0 0 0 0 0 10 10 
+
+///////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    if i%2:
+        print("* "*i)
+    else:
+        print("# "*i)  
+Enter No:5
+*
+# #
+* * *
+# # # #
+* * * * *
+
+//////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        if j%3==1:
+            print("* ", end="")
+        elif j%3==2:
+            print("@ ", end="")    
+        else:
+            print("# ", end="")
+    print("")  
+
+Enter No:10
+*
+* @
+* @ #
+* @ # *
+* @ # * @
+* @ # * @ #
+* @ # * @ # *
+* @ # * @ # * @
+* @ # * @ # * @ #
+* @ # * @ # * @ # *
+
+/////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    if i%2==1:
+            print("* "*i) 
+    else:
+        for j in range(1, i+1):
+            print(j, end=" ")
+        print("")   
+
+
+Enter No:6
+     *
+    1 2
+   * * *
+  1 2 3 4
+ * * * * *
+1 2 3 4 5 6 
+
+
+///////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print("1 "*(n-i)+(str(i)+" ")*(i))
+
+Enter No:5
+1 1 1 1 1
+1 1 1 2 2
+1 1 3 3 3
+1 4 4 4 4
+5 5 5 5 5
+////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print("1 "*(n-i+1)+(str(i)+" ")*(i))
+Enter No:5
+1 1 1 1 1 1
+1 1 1 1 2 2
+1 1 1 3 3 3
+1 1 4 4 4 4
+1 5 5 5 5 5
+
+///////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print("")    
+for i in range(1, n+1):
+    for j in range(i, 0, -1):
+         print(j, end=" ")
+    print("")     
+
+Enter No:5
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
+
+///////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(i-1), end="")
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print("")    
+for i in range(n, 0, -1):
+    print(" "*(i-1), end="")
+    for j in range(i, 0, -1):
+         print(j, end=" ")
+    print("") 
+
+Enter No:5
+1
+ 2 1
+  3 2 1
+   4 3 2 1
+    5 4 3 2 1
+    5 4 3 2 1
+   4 3 2 1
+  3 2 1
+ 2 1
+1    
+
+
+//////////////////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+        print(j, end=" ")
+    print("")    
+for i in range(n, 0, -1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+         print(j, end=" ")
+    print("")     
+
+Enter No:5
+1 2 3 4 5
+ 2 3 4 5
+  3 4 5
+   4 5
+    5
+    5
+   4 5
+  3 4 5
+ 2 3 4 5
+1 2 3 4 5
+//////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+        print(j, end=" ")
+    print("") 
+Enter No:5
+1 2 3 4 5
+ 2 3 4 5
+  3 4 5
+   4 5
+    5
+
+//////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+        print(j, end=" ")
+    print("")    
+for i in range(1, n+1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+         print(j, end=" ")
+    print("")     
+
+
+1 2 3 4 5
+ 2 3 4 5
+  3 4 5
+   4 5
+    5
+1 2 3 4 5
+ 2 3 4 5
+  3 4 5
+   4 5
+    5
+
+//////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(n , 0, -1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+        print(j, end=" ")
+    print("")    
+for i in range(n, 0, -1):
+    print(" "*(i-1), end="")
+    for j in range(i, n+1):
+         print(j, end=" ")
+    print("")
+
+Enter No:5
+    5
+   4 5
+  3 4 5
+ 2 3 4 5
+1 2 3 4 5
+    5
+   4 5
+  3 4 5
+ 2 3 4 5
+1 2 3 4 5     
+////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1, 2):
+    print(" "*(n-i-1)+"* "*i)
+
+Enter No:8
+      *
+    * * *
+  * * * * *
+* * * * * * *
+        
+////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1, 2):
+    print(" "*(n-i)+"* "*i)
+
+
+Enter No:7
+      *
+    * * *
+  * * * * *
+* * * * * * *
+
+//////////////////////////
+n = int(input("Enter No:"))*2
+for i in range(1, n+1, 2):
+    print(" "*(n-i)+"* "*i)
+
+Enter No:7
+             *
+           * * *
+         * * * * *
+       * * * * * * *
+     * * * * * * * * *
+   * * * * * * * * * * *
+ * * * * * * * * * * * * *
+
+/////////////////////////////
+n = int(input("Enter No:"))
+for i in range(-n , n+1):
+      print(i, end=" ")
+
+Enter No:5
+-5 -4 -3 -2 -1 0 1 2 3 4 5
+
+/////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(-n**2 , n+1):
+      print(i, end=" ")
+
+Enter No:5
+-25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5
+/////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(-n, n+1):
+      print(abs(i), end=" ")
+
+Enter No:5
+5 4 3 2 1 0 1 2 3 4 5
+
+///////////////
+
+n = int(input("Enter No:"))
+for i in range(-n+1, n):
+      print(n-abs(i), end=" ")
+
+Enter No:5
+1 2 3 4 5 4 3 2 1
+
+///////////////////////
+
+n = int(input("Enter No:"))
+for i in range(-n, n+1):
+      print(n-abs(i), end=" ")
+
+Enter No:5
+0 1 2 3 4 5 4 3 2 1 0
+///////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(-n+1, n):
+    if ((n-abs(i)) %2)==1:
+      print(n-abs(i), end=" ")
+    else:
+      print("@ ", end="")
+
+
+Enter No:5
+1 @ 3 @ 5 @ 3 @ 1
+
+/////////////////////////////
+n = int(input("Enter No:"))
+for i in range(-n+1, n):
+    if i<0:
+      print(((abs(i)*2)+1)*2, end=" ")
+    elif i>0:
+      print(((abs(i)*2)+1), end=" ")  
+    else:
+      print("0 ", end="")
+
+Enter No:7
+26 22 18 14 10 6 0 3 5 7 9 11 13
+/////////////////////////////////
+
+n = int(input("Enter no:"))
+for i in range(1, n+1):
+    print(chr(i+64), end=" ")
+
+Enter no:5
+A B C D E
+/////////////////////////////////
+
+n = int(input("Enter no:"))
+for i in range(n, 0, -1):
+    print(chr(i+64), end=" ")
+
+
+Enter no:26
+Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
+
+//////////////////////////////////////
+
+n = int(input("Enter no:"))
+for i in range(1, n+1):
+  if i%2:
+    print(chr(i+64), end=" ")
+  else:
+    print(chr(i+96), end=" ")
+
+Enter no:26
+A b C d E f G h I j K l M n O p Q r S t U v W x Y z
+///////////////////////////////////////
+
+n = int(input("Enter no:"))
+for i in range((-n)+1, n):
+  print(str(n-abs(i))*(n-abs(i)))
+ 
+Enter no:5
+1
+22
+333
+4444
+55555
+4444
+333
+22
+1
+
+//////////////////////////////
+
+n = int(input("Enter no:"))
+for i in range((-n)+1, n):
+  t= n-abs(i)
+  for j in range((-t)+1, t):
+    print(n-abs(j), end="")
+  print("")
+    
+
+Enter no:5
+5
+454
+34543
+2345432
+123454321
+2345432
+34543
+454
+5
+
+/////////////////////////////////
+
+n = int(input("Enter no:"))
+for i in range((-n)+1, n):
+  t= n-abs(i)
+  for j in range(1, t+1):
+    print(j, end="")
+  print("")
+
+Enter no:5
+1
+12
+123
+1234
+12345
+1234
+123
+12
+1
+
+////////////////////////
+n = int(input("Enter no:"))
+for i in range((-n)+1, n):
+  t= n-abs(i)
+  print(" "*(n-t), end=" ")
+  for j in range(1, t+1):
+    print(j, end="")
+  print("")
+
+Enter no:5
+     1
+    12
+   123
+  1234
+ 12345
+  1234
+   123
+    12
+     1
+
+/////////////////////////////////
+n = int(input("Enter no:"))
+for i in range(1, n+1):
+  print(" "*(n-i), end=" ")
+  for j in range(-i+1, i):
+    print(i-abs(j), end="")
+  print("")
+
+Enter no:5
+     1
+    121
+   12321
+  1234321
+ 123454321
+
+///////////////////////////////
+
+n = int(input("Enter No:"))
+for  i in range((-n)+1, n):
+    t = n-abs(i)
+    print(" "*(n-t), end=" ")
+    for j in range(1, t+1):
+        print(j, end=" ")
+    print("")    
+
+Enter No:5
+     1
+    1 2
+   1 2 3
+  1 2 3 4
+ 1 2 3 4 5
+  1 2 3 4
+   1 2 3
+    1 2
+     1
+//////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(-i+1, i):
+        print(i-abs(j),end="")
+    print("")
+
+Enter No:4
+   1
+  121
+ 12321
+1234321
+
+//////////////////////////
+
+n= int(input("Enter No: "))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print("  "*(n-i),end="")
+    for j in range(i, 0, -1):
+        print(j,end="")
+    print("")     
+
+Enter No: 7
+1            1
+12          21
+123        321
+1234      4321
+12345    54321
+123456  654321
+12345677654321
+
+/////////////////////////////
+n= int(input("Enter No:"))
+for i in range(n, 0, -1):
+    for j in range(-n+1, n):
+        if(n-abs(j)<=i):
+            print(n-abs(j), end="")
+        else:
+            print(" ", end="")
+    print("")        
+Enter No:5
+123454321
+1234 4321
+123   321
+12     21
+1       1
+///////////////////////////////
+
+n = int(input("Enter No: "))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j+n-i, end="")
+    print(str(n)*(n-i))    
+   
+
+Enter No: 5
+55555
+45555
+34555
+23455
+12345
+/////////////////////////////////////
+
+n = int(input("Enter No: "))
+for i in range(1, n+1):
+    for j in range(i, n+i):
+        print((j-1)%n+1, end="")
+    print("")    
+
+Enter No: 7
+1234567
+2345671
+3456712
+4567123
+5671234
+6712345
+7123456
+
+///////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for  j in range(n, 0, -1):
+        if(j>=i): 
+            print(n-j+1, end="")
+        else:
+            print(j, end="")
+    print("")            
+
+
+Enter No:7
+1234567
+1234561
+1234521
+1234321
+1234321
+1254321
+1654321
+
+///////////////////////
+n = int(input("Enter No:"))
+n = n*2
+for i in range(1, n+1, 2):
+    for j in range(i, n+i,2):
+        print((j-1)%n+1, end="")
+    print("")   
+
+
+Enter No:5
+13579
+35791
+57913
+79135
+91357
+//////////////////////////
+n = int(input("Enter No:"))
+n= n*2
+for i in range(1, n+1, 2):
+    for j in range(i, n+i, 2):
+        if(j<=n):
+           print((j-1)%n+1, end="")
+        else:
+            print(i-j%n-1, end="")
+    print("")  
+
+Enter No:5
+13579
+35791
+57931
+79531
+97531
+
+/////////////////////////
+
+n = int (input("Enter No:"))
+n=n*2
+for i in range(1, n+1, 2):
+    for j in range(i, n+i, 2):
+        if(j<=n):
+            print((j-1)%n+1, end="")
+        else:
+            print(i-j%n-1, end="")
+    print("")            
+
+
+Enter No:5
+13579
+35791
+57931
+79531
+97531
+
+///////////////////////////////
+
+n = int (input("Enter No:"))
+n=n*2
+for i in range(1, n+1, 2):
+    for j in range(i, n, 2):
+        if(j<=n):
+            print((j-1)%n+1, end="")
+        else:
+            print(i-j%n-1, end="")
+    print("")  
+
+
+Enter No:5
+13579
+3579
+579
+79
+9
+
+////////////////////////////
+n = int(input("Enter No:  "))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(chr(j+64), end="")
+    print("")      
+
+Enter No:  7
+A
+AB
+ABC
+ABCD
+ABCDE
+ABCDEF
+ABCDEFG
+
+////////////////////////////////
+
+n = int(input("Enter No:  "))
+for i in range(1, n+1):
+    for j in range(i, 0, -1):
+        print(chr(j+64), end="")
+    print("")    
+
+
+Enter No:  5
+A
+BA
+CBA
+DCBA
+EDCBA
+//////////////////////////////
+
+
+n = int(input("Enter No:  "))
+for i in range(1, n+1):
+    for j in range(i, 0, -1):
+        print(chr(i+(32*(3-j%2))), end=" ")
+    print("")  
+
+
+Enter No:  10
+A
+b B
+C c C
+d D d D
+E e E e E
+f F f F f F
+G g G g G g G
+h H h H h H h H
+I i I i I i I i I
+j J j J j J j J j J
+//////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(-i+1, i):
+        print(chr((i-abs(j)+64)),end="")
+    print("")    
+
+
+Enter No:5
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+////////////////////////////////
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(-i+1, i):
+        print(chr((abs(j)+65)), end="")
+    print("")
+
+Enter No:5
+    A
+   BAB
+  CBABC
+ DCBABCD
+EDCBABCDE
+
+////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(i-1), end=" ")
+    for j in range(i, n+1):
+        print(chr(j+64), end=" ")
+    print("")    
+
+
+Enter No:8
+ A B C D E F G H
+  B C D E F G H
+   C D E F G H
+    D E F G H
+     E F G H
+      F G H
+       G H
+        H
+
+/////////////////////////////////////////
+
+n = int (input("Enter Input:"))
+for i in range(1, n+1):
+    print("0 "*(i-1)+chr(i+64)+" "+"1 "*(n-i))
+
+
+Enter Input:10
+A 1 1 1 1 1 1 1 1 1
+0 B 1 1 1 1 1 1 1 1
+0 0 C 1 1 1 1 1 1 1
+0 0 0 D 1 1 1 1 1 1
+0 0 0 0 E 1 1 1 1 1
+0 0 0 0 0 F 1 1 1 1
+0 0 0 0 0 0 G 1 1 1
+0 0 0 0 0 0 0 H 1 1
+0 0 0 0 0 0 0 0 I 1
+0 0 0 0 0 0 0 0 0 J
+//////////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(chr(j+64)+chr(j+96), end="")
+    print("")
+ 
+Enter No:10
+Aa
+AaBb
+AaBbCc
+AaBbCcDd
+AaBbCcDdEe
+AaBbCcDdEeFf
+AaBbCcDdEeFfGg
+AaBbCcDdEeFfGgHh
+AaBbCcDdEeFfGgHhIi
+AaBbCcDdEeFfGgHhIiJj   
+///////////////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range(n, 0, -1):
+    for j in range(n, 0, -1):
+         print(i if i>=j else j, end="")
+    print("")     
+
+Enter No:7
+7777777
+7666666
+7655555
+7654444
+7654333
+7654322
+7654321
+////////////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range(0, n+1):
+    print(" "*(n-i), end="")
+    for j in range(-i, i+1):
+        print(n- abs(j)+1 if j!=0 else 0, end="")
+    print("")
+
+Enter No:7
+       0
+      707
+     67076
+    5670765
+   456707654
+  34567076543
+ 2345670765432
+123456707654321
+/////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range(0, n+1):
+    t = int((i+1)/2*i)
+    for j in range(-i+1, i):
+        print(t -abs(j), end=" ")
+    print("")     
+
+
+
+Enter No:6
+
+1
+2 3 2
+4 5 6 5 4
+7 8 9 10 9 8 7
+11 12 13 14 15 14 13 12 11
+16 17 18 19 20 21 20 19 18 17 16
+
+////////////////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(((j-1)*n)+i, end=" ")
+    print("")    
+
+Enter No:7
+1
+2 9
+3 10 17
+4 11 18 25
+5 12 19 26 33
+6 13 20 27 34 41
+7 14 21 28 35 42 49
+//////////////////////////////////////////////////
+
+n = int(input("Enter No:"))
+c = 1
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(c, end=" ")
+        c+=1
+    print("")     
+
+Enter No:7
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+16 17 18 19 20 21
+22 23 24 25 26 27 28
+///////////////////////////////////////////////
+n = int(input("Enter No:"))
+x = 0
+for i in range(1, n+1):
+    x = x + i
+    for j in range(1, i+1):
+        c = x+j-i if i%2==1 else x-j+1
+        print(c, end=" ")
+    print("")
+Enter No:7
+1
+3 2
+4 5 6
+10 9 8 7
+11 12 13 14 15
+21 20 19 18 17 16
+22 23 24 25 26 27 28
+
+//////////////////////////////////////
+
+
+n = int(input("Enter No:"))
+x = 0
+for i in range(1, n+1):
+    x = x + i
+    for j in range(1, i+1):
+        c =  x-j+1 if i%2==1 else x+j-i
+        print(c, end=" ")
+    print(" ") 
+
+Enter No:7
+1
+2 3
+6 5 4
+7 8 9 10
+15 14 13 12 11
+16 17 18 19 20 21
+28 27 26 25 24 23 22
+
+///////////////////////////////////////////
+
+
+n = int(input("Enter No: "))
+c = 0
+for  i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        print(chr(65+(c%26)), end=" ")
+        c+=1
+    print("") 
+
+Enter No: 5
+    A
+   B C
+  D E F
+ G H I J
+K L M N O
+////////////////////////////////////////////
+  
+
+n = int(input("Enter No:"))
+c = 1
+i = 1
+while c<= n:
+    j = 1
+    while c <= n and j<=i:
+        print(c, end=" ")
+        c+=1
+        j+=1
+    print("")
+    i+=1
+ 
+Enter No:30
+1 
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30
+
+//////////////////////////////
+
+for i in range(1, 11):
+    for j in range(0, 100, 10):
+        print("%-3d" % (j+i), end="")
+    print("")    
+
+1  11 21 31 41 51 61 71 81 91
+2  12 22 32 42 52 62 72 82 92
+3  13 23 33 43 53 63 73 83 93
+4  14 24 34 44 54 64 74 84 94
+5  15 25 35 45 55 65 75 85 95
+6  16 26 36 46 56 66 76 86 96
+7  17 27 37 47 57 67 77 87 97
+8  18 28 38 48 58 68 78 88 98
+9  19 29 39 49 59 69 79 89 99
+10 20 30 40 50 60 70 80 90 100
+
+/////////////////////////////////////
+
+
+n = int(input("Enter No: "))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        print("%-3d" % (j*i), end="")
+    print("")   
+
+Enter No: 10
+1  2  3  4  5  6  7  8  9  10
+2  4  6  8  10 12 14 16 18 20
+3  6  9  12 15 18 21 24 27 30
+4  8  12 16 20 24 28 32 36 40
+5  10 15 20 25 30 35 40 45 50
+6  12 18 24 30 36 42 48 54 60
+7  14 21 28 35 42 49 56 63 70
+8  16 24 32 40 48 56 64 72 80
+9  18 27 36 45 54 63 72 81 90
+10 20 30 40 50 60 70 80 90 100
+////////////////////////////////////////////
+
+n = int(input("Enter No: "))
+for i in range(1, n+1):
+    print("  "*(n-i), end="")
+    for j in range(1, i*2):
+        print("* " if j%2==1 else "# ",end="")
+    print("")    
+
+Enter No: 5
+        *
+      * # *
+    * # * # *
+  * # * # * # *
+* # * # * # * # *
+
+//////////////////////////////////////
+
+n = int(input("Enter No: "))
+for i in range(1, n+1):
+   print("  "*(n-i)+"**"*(i*2-1))
+
+Enter No: 5
+        **
+      ******
+    **********
+  **************
+******************
+
+////////////////////////////////////
+n = int(input("Enter No: "))
+for i in range(1, n+1):
+    print("  "*(n-i)+"**"*(i*2-1))
+    print("  "*(n-i)+"**"*(i*2-1))
+
+Enter No: 5
+        **
+        **
+      ******
+      ******
+    **********
+    **********
+  **************
+  **************
+******************
+******************
+
+//////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        if j==1 or j==i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+Enter No:9
+        *
+       * *
+      *   *
+     *     *
+    *       *
+   *         *
+  *           *
+ *             *
+*               *
+/////////////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        if j==1 or j==i:
+            print("* ", end="")
+        else:
+            print("@ ", end="")
+    print("")
+
+
+
+Enter No:9
+        *
+       * *
+      * @ *
+     * @ @ *
+    * @ @ @ *
+   * @ @ @ @ *
+  * @ @ @ @ @ *
+ * @ @ @ @ @ @ *
+* @ @ @ @ @ @ @ *
+
+
+////////////////////////////////////////
+
+
+n = int(input("Ënter No:"))
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        if j==1 or j==i or i==n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print("")   
+
+Ënter No:9
+*
+**
+* *
+*  *
+*   *
+*    *
+*     *
+*      *
+*********
+
+
+////////////////////////////////////
+
+n = int(input("Ënter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        if j==1 or j==i:
+            print("* ", end="")
+        elif i%2==1 and j==int(i/2+1):
+            print("* ", end="")
+        elif i%2==0 and j==i/2:
+            print(" *", end="")
+        else:
+            print("  ", end="")
+    print("")    
+
+
+Ënter No:9
+        *
+       * *
+      * * *
+     *  *  *
+    *   *   *
+   *    *    *
+  *     *     *
+ *      *      *
+*       *       *
+
+////////////////////////////////////////////
+
+n = int(input("Ënter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        if j==1 or j==i or (i%2==1 and j==int(i/2+1)):
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")    
+
+Ënter No:9
+        *
+       * *
+      * * *
+     *     *
+    *   *   *
+   *         *
+  *     *     *
+ *             *
+*       *       *
+
+/////////////////////////////////////////////////
+
+n = int(input("Ënter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        if j==1 or j==i or i==n:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")     
+
+
+
+Ënter No:9
+        *
+       * *
+      *   *
+     *     *
+    *       *
+   *         *
+  *           *
+ *             *
+* * * * * * * * *
+
+//////////////////////////////////////
+
+n = int(input("Ënter No:"))
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(1, i+1):
+        if j==1 or j==i or i==n:
+            print("* ", end="")
+        elif j==int(i/2)+(i%2):
+            print("* "if i%2==1 else " *", end="")
+        else:
+            print("  ", end="")
+    print("")    
+
+Ënter No:9
+        *
+       * *
+      * * *
+     *  *  *
+    *   *   *
+   *    *    *
+  *     *     *
+ *      *      *
+* * * * * * * * *
+
+/////////////////////////////////
+
+
+n = int(input("Ënter No:"))
+for i in range((-n+1), n+1):
+    x = n-abs(i)
+    print(" "*(n-x), end="")
+    print("* "*x)
+    
+Ënter No:5
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
+////////////////////////////////
+
+n = int(input("Ënter No:"))
+for i in range((-n+1), n+1):
+    x = n-abs(i)
+    print(" "*(n-x), end="")
+    for j in range(1, x+1):
+        if j==1 or j==x:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+Ënter No:5
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+
+//////////////////////////////////////////////////
+
+n = int(input("Ënter No:"))
+for i in range((-n+1), n+1):
+    x = n-abs(i)
+    print(" "*(n-x), end="")
+    for j in range(1, x+1):
+        if j==1 or j==x or x==n:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+Ënter No:7
+      * 
+     * *
+    *   *
+   *     *
+  *       *
+ *         *
+* * * * * * *
+ *         *
+  *       *
+   *     *
+    *   *
+     * *
+      *
+
+//////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range((-n+1), n+1):
+    x = n-abs(i)
+    print(" "*(n-x), end="")
+    for j in range(1, x+1):
+        if x==n:
+            print("* ", end="")
+        elif x%2==1 and j==int(x/2)+1:
+            print("* ", end="")
+        elif x%2==0 and j==x/2:
+            print(" *", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+
+
+Enter No:5
+    *
+    *
+    *
+    *
+* * * * *
+    *
+    *
+    *
+    *
+/////////////////////////////////////////
+
+n = int(input("Enter No:"))
+for i in range((-n+1), n+1):
+    x = n-abs(i)
+    print(" "*(n-x), end="")
+    for j in range(1, x+1):
+        if j==1 or j==x or x==n:
+            print("* ", end="")
+        elif x%2==1 and j==int(x/2)+1:
+            print("* ", end="")
+        elif x%2==0 and j==x/2:
+            print(" *", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+
+
+Enter No:9
+        * 
+       * *
+      * * *
+     *  *  * 
+    *   *   *
+   *    *    *
+  *     *     *
+ *      *      *
+* * * * * * * * *
+ *      *      *
+  *     *     *
+   *    *    *
+    *   *   *
+     *  *  *
+      * * *
+       * *
+        *
+
+
+//////////////////////////////////////////
+
+
+n = int(input("Enter No:"))
+for i in range((-n+1), n+1):
+    x = n-abs(i);
+    print("  "*(n-x)+"*"*x)
+
+Enter No:5
+        *
+      **
+    ***
+  ****
+*****
+  ****
+    ***
+      **
+        *
+
+
+
+///////////////////////////////
+n = int(input("Enter NO:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==1 or i==n or j==1 or j==n:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+
+
+
+Enter NO:9
+* * * * * * * * *
+*               *
+*               *
+*               *
+*               *
+*               *
+*               *
+*               *
+* * * * * * * * *
+
+///////////////////////////////////////////
+n = int(input("Enter NO odd:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==1 or i==n or j==1 or j==n:
+            print("* ", end="")
+        elif j==int(n/2)+1:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+Enter NO odd:9
+* * * * * * * * *
+*       *       *
+*       *       *
+*       *       *
+*       *       *
+*       *       *
+*       *       *
+*       *       *
+* * * * * * * * *
+
+///////////////////////////////////
+
+n = int(input("Enter NO:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==1 or i==n or j==1 or j==n:
+            print("* ", end="")
+        elif n%2==1 and j==int(n/2)+1:
+            print("* ", end="")
+        elif n%2==0 and j==n/2:
+            print(" *", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+Enter NO:5
+* * * * *
+*   *   *
+*   *   *
+*   *   *
+* * * * *
+///////////////////////////////////////////
+
+
+n = int(input("Enter  NNo:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==1 or i==n or j==1 or j==n or i==int(n/2)+1:
+            print("* ", end="")
+        elif n%2==1 and j==int(n/2)+1:
+            print("* ", end="")
+        elif n%2==0 and j==n/2:
+            print(" *", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+
+
+Enter  NNo:8
+* * * * * * * *
+*      *      *
+*      *      *
+*      *      *
+* * * * * * * *
+*      *      *
+*      *      *
+* * * * * * * *   
+
+////////////////////////////////////////////
+
+n = int(input("Enter  NNo Odd:"))
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if i==1 or i==n or j==1 or j==n or i==int(n/2)+1:
+            print("* ", end="")
+        elif n%2==1 and j==int(n/2)+1:
+            print("* ", end="")
+        elif n%2==0 and j==n/2:
+            print(" *", end="")
+        else:
+            print("  ", end="")
+    print("")    
+
+Enter  NNo Odd:9
+* * * * * * * * *
+*       *       *
+*       *       *
+*       *       *
+* * * * * * * * *
+*       *       *
+*       *       *
+*       *       *
+* * * * * * * * *
+/////////////////////////////////////////
+
+a = int(input("Enter A: "))
+b = int(input("Enter B: "))
+for i in range(1, a+1):
+    for j in range(1, b+1):
+        if i==1 or i==a or j==1 or j==b:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+
+Enter A: 8
+Enter B: 11
+* * * * * * * * * * *
+*                   *
+*                   *
+*                   *
+*                   *
+*                   *
+*                   *
+* * * * * * * * * * *
+
+////////////////////////////////////////////////
+a = int(input("Enter A: "))
+b = int(input("Enter B: "))
+for i in range(1, a+1):
+    for j in range(1, b+1):
+        if i==1 or i==a or j==1 or j==b:
+            print("* ", end="")
+        elif b%2==1 and j==int(b/2)+1:
+            print("* ", end="")
+        elif b%2==0 and j==b/2:
+            print(" *", end="")    
+        else:
+            print("  ", end="")
+    print("")
+
+Enter A: 5
+Enter B: 10
+* * * * * * * * * *
+*        *        *
+*        *        *
+*        *        *
+* * * * * * * * * *
+/////////////////////////////////////////////////
+
+n = int(input("Enter Number:"))
+c=0
+for i in range((-n+1), n):
+    x = n-abs(i)
+    c+=1
+    ch=chr((int(c/2)+c%2)+(64 if x%2==1 else 96))
+    print(" "*(n-x)+(ch+" ")*x)
+
+
+Enter Number:4
+   A
+  a a
+ B B B
+b b b b
+ C C C
+  c c
+   D
+
+/////////////////////////////////////
+n = int(input("Enter Number:"))
+c=0
+for i in range((-n+1), n):
+    x = abs(i)+1
+    for j in range((2-x%2), x+1, 2):
+        if x%2==1:
+            print(chr(65+int(j/2)), end=" ")
+        else:
+            print(" "+chr(65+(26-(int(j/2)))), end="")
+    print("")
+
+Enter Number:6
+ Z Y X
+A B C
+ Z Y
+A B
+ Z
+A
+ Z
+A B
+ Z Y
+A B C
+ Z Y X
+
+
+//////////////////////////////////////////////////
+
+n = int(input("Enter Number:"))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(i) >= abs(j):
+            print(n-abs(i), end=" ")
+        else:
+            print(n-abs(j), end=" ")
+    print("")
+   
+Enter Number:5
+1 1 1 1 1 1 1 1 1
+1 2 2 2 2 2 2 2 1
+1 2 3 3 3 3 3 2 1
+1 2 3 4 4 4 3 2 1
+1 2 3 4 5 4 3 2 1
+1 2 3 4 4 4 3 2 1
+1 2 3 3 3 3 3 2 1
+1 2 2 2 2 2 2 2 1
+1 1 1 1 1 1 1 1 1
+///////////////////////////////////////////////////////////////////////
+
+n = int(input("Enter Number:"))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(i) >= abs(j):
+            print(abs(j), end=" ")
+        else:
+            print(" ", end=" ")
+    print("")
+   
+Enter Number:5
+4 3 2 1 0 1 2 3 4
+  3 2 1 0 1 2 3
+    2 1 0 1 2
+      1 0 1
+        0
+      1 0 1
+    2 1 0 1 2
+  3 2 1 0 1 2 3
+4 3 2 1 0 1 2 3 4
+
+//////////////////////////////////////////
+n = int(input("Enter Number:"))
+for i in range(-n, n+1):
+    for j in range(-n, n+1):
+        if abs(j) <= n-abs(i):
+            print(abs(j), end=" ")
+        else:
+            print(" ", end=" ")
+    print("")
+   
+Enter Number:5
+          0
+        1 0 1
+      2 1 0 1 2
+    3 2 1 0 1 2 3
+  4 3 2 1 0 1 2 3 4
+5 4 3 2 1 0 1 2 3 4 5
+  4 3 2 1 0 1 2 3 4
+    3 2 1 0 1 2 3
+      2 1 0 1 2
+        1 0 1
+          0
+
+///////////////////////////////////////////
+
+n = int(input("Enter Number:"))
+for i in range(-n, n+1):
+    for j in range(-n, n+1):
+        if abs(j)+1 <= n-abs(i):
+            print("* ", end=" ")
+        else:
+            print("  ", end=" ")
+    print("")
+   
+
+Enter Number:5
+
+               *
+            *  *  *
+         *  *  *  *  *
+      *  *  *  *  *  *  *
+   *  *  *  *  *  *  *  *  *
+      *  *  *  *  *  *  *
+         *  *  *  *  *
+            *  *  *
+               *
+
+////////////////////////////////////////////////
+
+
+n = int(input("Enter Number:"))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(j)+1 >= n-abs(i):
+            print("*  ", end="")
+        else:
+            print("   ", end="")
+    print("")
+   
+Enter Number:5
+*  *  *  *  *  *  *  *  *
+*  *  *  *     *  *  *  *
+*  *  *           *  *  *
+*  *                 *  *
+*                       *
+*  *                 *  *
+*  *  *           *  *  *
+*  *  *  *     *  *  *  *
+*  *  *  *  *  *  *  *  *
+
+////////////////////////////////////////////////
+
+n = int(input("Enter Number:"))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(j)+1 >= n-abs(i):
+            print(chr(64+(n-abs(j))), end=" ")
+        else:
+            print(" ", end="")
+    print("")
+   
+Enter Number:5
+A B C D E D C B A
+A B C D  D C B A
+A B C    C B A
+A B      B A
+A        A
+A B      B A
+A B C    C B A
+A B C D  D C B A
+A B C D E D C B A
+
+
+//////////////////////////////////////
+
+
+n = int(input("Enter Number: "))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(j)+1 >= n-abs(i):
+            print(chr(64+(n-abs(j))),
+                                     end=" ")
+        else:
+            print("  ", end="")
+    print("")
+   
+Enter Number: 5
+A B C D E D C B A
+A B C D   D C B A
+A B C       C B A
+A B           B A
+A               A
+A B           B A
+A B C       C B A
+A B C D   D C B A
+A B C D E D C B A
+
+
+
+////////////////////////////////////////////////
+n = int(input("Enter Number: "))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(j) >= abs(i):
+           if(j<0):
+               print("%-3d" % (((abs(j)*2)+1)*2), end="")
+           elif(j>0):
+               print("%-3d" % ((abs(j)*2)+1), end="")    
+           else:
+                print("2  ", end="")
+        else:
+            print("  ", end="")
+    print("")
+   
+Enter Number: 5
+18               9
+18 14           7  9
+18 14 10       5  7  9
+18 14 10 6    3  5  7  9
+18 14 10 6  2  3  5  7  9
+18 14 10 6    3  5  7  9
+18 14 10       5  7  9
+18 14           7  9
+18               9
+
+//////////////////////////////////////////////////
+
+n = int(input("Enter Number: "))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(j) >= abs(i):
+           if(j<0):
+               print("%-3d" % (((abs(j)*2)+1)*2), end="")
+           elif(j>0):
+               print("%-3d" % ((abs(j)*2)+1), end="")    
+           else:
+                print("2  ", end="")
+        else:
+            print("   ", end="")
+    print("")
+   
+Enter Number: 5
+18                      9
+18 14                7  9
+18 14 10          5  7  9
+18 14 10 6     3  5  7  9
+18 14 10 6  2  3  5  7  9
+18 14 10 6     3  5  7  9
+18 14 10          5  7  9
+18 14                7  9
+18                      9
+
+////////////////////////////////////////////////
+
+n = int(input("Enter Number: "))
+n*=3
+for i in range(-n, n+1):
+    for j in range(-n, n+1):
+        if (abs(j)%3==0 and abs(i)<= abs(j)) or (abs(j)<=abs(i) and abs(i)%3==0):
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print("")
+
+
+Enter Number: 1
+* * * * * * *
+*           *
+*           *
+*     *     *
+*           *
+*           *
+* * * * * * *
+
+Enter Number: 2
+* * * * * * * * * * * * * 
+*                       *
+*     * * * * * * *     *
+*     *           *     *
+*     *           *     *
+*     *     *     *     *
+*     *           *     *
+*     *           *     *
+*     * * * * * * *     *
+*                       *
+*                       *
+* * * * * * * * * * * * *
+
+////////////////////////////////////////
+
+
+n = int(input("Enter Number: "))
+for i in range(-n+1, n):
+    for j in range(-n+1, n):
+        if abs(i) <= abs(j):
+            print(n-abs(i), end=" ")
+        else:
+            print(n-abs(j), end=" ")
+    print("")
+
+
+Enter Number: 5
+1 2 3 4 5 4 3 2 1
+2 2 3 4 5 4 3 2 2
+3 3 3 4 5 4 3 3 3
+4 4 4 4 5 4 4 4 4
+5 5 5 5 5 5 5 5 5
+4 4 4 4 5 4 4 4 4
+3 3 3 4 5 4 3 3 3
+2 2 3 4 5 4 3 2 2
+1 2 3 4 5 4 3 2 1
+
+
+///////////////////////////////////////////////
+
+n = int(input("Enter Number: "))
+for i in range(n, 0, -1):
+    for j in range(0, n):
+            print(((i+j)%n+1), end=" ")
+    print("")
+
+
+Enter Number: 7
+1 2 3 4 5 6 7
+7 1 2 3 4 5 6
+6 7 1 2 3 4 5
+5 6 7 1 2 3 4
+4 5 6 7 1 2 3
+3 4 5 6 7 1 2
+2 3 4 5 6 7 1
+
+
+//////////////////////////////////////////////
+def printSpiral(n):
+        for i in range(0, n):
+                for j in range(0, n):
+                        x= min(min(i,j), min(n - 1 - i, n - 1 -j))
+                        if(i <= j):
+                                print((n - 2*x)*(n - 2*x)-(i - x)-(j - x), end="\t")
+                        else:
+                                print(((n - 2*x - 2)*(n - 2*x - 2)+(i - x)+(j - x)), end="\t")
+                print()
+n =5
+
+printSpiral(n)
+
+25      24      23      22      21
+10      9       8       7       20
+11      2       1       6       19
+12      3       4       5       18
+13      14      15      16      17
+ 
+
